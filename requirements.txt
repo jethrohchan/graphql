@@ -22,7 +22,7 @@ promise==2.3
 psycopg2==2.7.5
 PyJWT==1.7.1
 pytz==2018.5
-PyYAML==3.13
+PyYAML==5.1
 reportlab==3.5.34
 requests==2.20.0
 Rx==1.6.1
