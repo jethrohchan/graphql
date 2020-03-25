@@ -8,4 +8,9 @@ class Query(cookbook.ingredients.schema.Query, graphene.ObjectType):
     # as we begin to add more apps to our project
     pass
 
-schema = graphene.Schema(query=Query)
+
+class Mutation(cookbook.ingredients.schema.Mutation, graphene.ObjectType):
+    pass
+
+
+schema = graphene.Schema(query=Query, mutation=Mutation)

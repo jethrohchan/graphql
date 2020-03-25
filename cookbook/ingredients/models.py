@@ -10,7 +10,7 @@ class Category(models.Model):
 
 class Ingredient(models.Model):
     name = models.CharField(max_length=100)
-    notes = models.TextField()
+    notes = models.TextField(blank=True)
     category = models.ForeignKey(
         Category, related_name='ingredients', on_delete=models.CASCADE)
 
