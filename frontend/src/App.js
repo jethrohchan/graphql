@@ -1,17 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Query } from 'react-apollo';
+import { gql } from 'apollo-boost';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
         <p>
           Main Component
         </p>
-      </header>
+        <Query query={GET_CATEGORIES_QUERY}>
+            {
+                ({data, loading, error}) => {
+                    if (loading) return <div>Loading</div>
+                    if (error) return <div>Error</div>
+
+                    return (
+                        <div>
+                            {JSON.stringify(data)}
+                        </div>
+                    )
+                }
+            }
+        </Query>
     </div>
   );
 }
+
+const GET_CATEGORIES_QUERY = gql`
+    {
+      allCategories {
+        id,
+        name
+      }
+    }
+`
 
 export default App;
