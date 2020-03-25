@@ -1,10 +1,13 @@
 aniso8601==7.0.0
+asgiref==3.2.5
 Babel==2.6.0
 certifi==2018.10.15
 chardet==3.0.4
 confusable-homoglyphs==3.2.0
 Django==2.0.9
+django-cors-headers==3.2.1
 django-filter==2.0.0
+django-graphql-jwt==0.3.0
 django-phonenumber-field==2.0.1
 django-registration==3.0
 django-webpack-loader==0.6.0
@@ -28,5 +31,6 @@ requests==2.20.0
 Rx==1.6.1
 singledispatch==3.4.0.3
 six==1.14.0
+sqlparse==0.3.1
 status==0.2.5
 urllib3==1.24
