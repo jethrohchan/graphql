@@ -4,6 +4,7 @@ import graphql_jwt
 import cookbook.ingredients.schema
 import cookbook.users.schema
 
+
 class Query(cookbook.users.schema.Query, cookbook.ingredients.schema.Query, graphene.ObjectType):
     # This class will inherit from multiple Queries
     # as we begin to add more apps to our project
