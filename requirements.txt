@@ -1,6 +1,6 @@
 aniso8601==7.0.0
 asgiref==3.2.5
-Babel==2.6.0
+Babel==2.9.1
 certifi==2018.10.15
 chardet==3.0.4
 confusable-homoglyphs==3.2.0
